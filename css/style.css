@@ -1,0 +1,668 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Font Settings */
+body {
+    font-family: "lato", sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 2px solid #f0f0f0;
+    position: relative;
+    transition: top 0.3s;
+}
+
+.logo h1 {
+    font-size: 36px;
+    color: #0D5EBA;
+    margin: 0;
+    padding: 7px 77px 7px 77px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.navbar ul li {
+    font-size: 18px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #003366;
+}
+
+.cart-icon a i {
+    font-size: 24px; 
+    color: #002D69;
+    transition: color 0.3s;
+}
+
+.cart-icon a:hover i {
+    color: #f0a500; 
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .cart-icon a i {
+        font-size: 20px;
+    }
+}
+
+/* Banner Section */
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Shop by Jewelry Type Section */
+.shop-by-type {
+    text-align: left;
+    padding: 40px;
+    background-color: #f4f4f4;
+    font-size: 36px;
+}
+
+.shop-by-type h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #003366;
+}
+
+/* Jewelry Types Container */
+.jewelry-types {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+
+/* Jewelry Item Styling */
+.jewelry-item {
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+}
+
+.jewelry-item img {
+    width: 221px;
+    height: 221px;
+}
+
+.jewelry-item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jewelry-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Handcrafted Section */
+.handcrafted-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.handcrafted-text {
+    background: #002D69;
+    padding: 120px 77px;
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.handcrafted-text h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 54px;
+    margin-bottom: 12px;
+}
+
+.handcrafted-text p {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.handcrafted-image {
+    flex: 1;
+    text-align: center;
+}
+
+.handcrafted-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.handcrafted button {
+    background: white;
+    color: black;
+    padding: 11px 16px 11px 16px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.handcrafted button:hover {
+    background: #d07b00;
+}
+
+/* Latest Jewelry */
+.latest-jewelry {
+    text-align: center;
+    padding: 40px;
+}
+
+.latest-jewelry .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.latest-jewelry .gallery-item img {
+    width: 300px;
+    height: auto;
+}
+
+.view-gallery-button {
+    background-color: #003366;
+    color: #fff;             
+    font-size: 16px;           
+    font-weight: bold;         
+    padding: 10px 20px;        
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;          
+    transition: background-color 0.3s ease; 
+}
+
+.view-gallery-button:hover {
+    background-color: #002244; 
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.customer-reviews h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #003366;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.quote {
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Our Services Section */
+.our-services {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.our-services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #003366;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.service {
+    width: 30%;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.learn-more-button {
+    margin-top: 20px;
+}
+
+.learn-more-button button {
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button button:hover {
+    background-color: #f0a500;
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Stay in Touch + Footer Section */
+.stay-in-touch-footer {
+    background-color: #bce0fd;
+    padding: 40px;
+    color: #003366;
+}
+
+/* Stay in Touch Section */
+.stay-in-touch-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.stay-in-touch-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.stay-in-touch-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.stay-in-touch-text h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.stay-in-touch-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.stay-in-touch-text button {
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.stay-in-touch-text button:hover {
+    background-color: #f0a500;
+}
+
+/* Footer Content (Columns) */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    width: 30%;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #003366;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #f0a500;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    border-top: 1px solid #003366;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #003366;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #f0a500;
+}
+
+@media (max-width: 768px) {
+    .stay-in-touch-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stay-in-touch-image img {
+        max-width: 100%;
+    }
+
+    .stay-in-touch-text {
+        max-width: 100%;
+    }
+
+    .stay-in-touch-text h2 {
+        font-size: 28px;
+    }
+
+    .stay-in-touch-text p {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-media a {
+        font-size: 20px;
+    }
+}
+
+/* Stay in Touch + Footer Section */
+.stay-in-touch-footer {
+    background-color: #bce0fd;
+    color: #003366;
+    margin: 0;
+}
+
+/* Stay in Touch Section */
+.stay-in-touch-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    width: 75%;
+    margin: 0 auto;
+    background-color: #bce0fd;
+    border-radius: 10px;
+}
+
+.stay-in-touch-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.stay-in-touch-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.stay-in-touch-text {
+    text-align: center;
+    margin: 0;
+}
+
+.stay-in-touch-text h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.stay-in-touch-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.stay-in-touch-text button {
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.stay-in-touch-text button:hover {
+    background-color: #f0a500;
+}
+
+/* Footer Content (Columns) */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    background-color: transparent;
+    text-align: left;
+}
+
+.footer-column {
+    width: 30%;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #003366;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #f0a500;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    border-top: 1px solid #003366;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #003366;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #f0a500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .stay-in-touch-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .stay-in-touch-image img {
+        max-width: 100%;
+    }
+
+    .stay-in-touch-content {
+        width: 90%;
+        padding: 10px 20px;
+    }
+
+    .stay-in-touch-text h2 {
+        font-size: 28px;
+    }
+
+    .stay-in-touch-text p {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-media a {
+        font-size: 20px;
+    }
+}
